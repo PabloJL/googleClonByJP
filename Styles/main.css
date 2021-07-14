@@ -1,0 +1,184 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Inicio Header*/
+header{
+    width: 100%;
+    height: 6rem;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 25rem;
+    height: auto; /*Para que tome la altura del padre, es decir, 60px*/
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 2rem;
+    color: #000;
+}
+
+header .nav-right-section .menu-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;  /*Para evitar que se repita*/
+    background-position: center; /*Que el icono quede al centro*/
+    background-size: contain; /*Para que logre o se aproxime al tamaño del contenedor*/
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+/*Fin Header*/
+
+/*Inicio Main*/
+main{
+    margin-top:8rem;
+    text-align: center; /*Para que todo lo que este dentro de la etiqueta main pueda centrarse*/
+    
+}
+
+.main-logo img{
+    height:9.2rem;
+    width:27.2rem;
+    margin: 0 auto; /*Una vez que ponemos una dimension de ancho a un contenedor pero tenemos espacio y queremos*/
+    margin-bottom: 3.5rem; /*posicionarlo de manera automatica en el espacio que falta, cuando le pones auto (divide lo que le sobra entre 2)*/
+    
+}
+
+main .main-input{
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+main .main-input-container{
+    width: 52.5rem;
+    border-radius: 10rem;
+    border: 0.1rem solid #dfe1e5;
+    display: flex; /*Para alinear los 3 elementos de manera lineal*/
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 45rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0rem 0.1rem 0.6rem 0rem #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+
+/*Botones de la parte de abajo*/
+main .main-buttons{
+    width: 53rem;
+    margin:0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 3.6rem;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding:0rem 1.5rem;
+    margin-right: 1.5rem;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0rem 0.1rem 0.1rem rgb(0 0 0 / 10%);
+    color:#222;
+    border: 0.1rem solid #dadce0 ;
+}
+
+
+/* Fin Main */
+
+ /*Inicio Footer*/
+ footer{
+     width: 100%;
+     height: 5rem;
+     position: absolute;
+     bottom: 0; /*Con estas dos últimas lineas aseguramos que el footer siempre este en la parte de abajo de la pagina*/
+     display: grid; /*Se separa por secciones*/
+     grid-template-columns: 1fr 1fr;/*Quiero que tenga 2 fracciones con esta instruccion*/
+     align-items: center;
+     font-size: 1.4rem;
+     background-color: #f2f2f2;
+     border-top: 0.1rem solid #e4e4e4;
+ }
+
+ footer ul{
+     margin: 1rem;
+     list-style: none;
+     display: flex;
+     padding-left: 0;
+ }
+
+ footer .footer-left{
+     justify-content: flex-start;
+ }
+ footer .footer-right{
+     justify-content:flex-end;
+ }
+ footer ul li a{
+     margin:1.5rem;
+     color: #5f6368;
+ }
+ /*Fin Footer*/
